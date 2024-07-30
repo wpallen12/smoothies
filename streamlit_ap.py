@@ -9,7 +9,9 @@ st.write(
 )
 
 
-
+#Giving names to the order
+name_on_order = st.text_input('Name On Smoothie') 
+st.write('The name on your Smoothie will be:', name_on_order)
 
 cnx = st.connection("snowflake")
 session = cnx.session()
