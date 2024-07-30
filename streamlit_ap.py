@@ -20,7 +20,8 @@ st.dataframe(data=my_dataframe, use_container_width=True)
 
 ingredients_list = st.multiselect(
     'Choose up to 5 ingredients:',
-    my_dataframe
+    my_dataframe,
+    max_selections=5
 )
 
 # CLEAN UP THE LIST TO NOT SHOW ANYTHING UNLESS INGREDIENTS HAVE BEEN SELECTED
